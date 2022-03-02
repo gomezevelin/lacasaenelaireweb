@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5766ae100f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="header">  
+    <div class="header__contenedor">  
+        <div   div class="header__titulo"> 
+            <h1>La casa en el aire</h1>
+            <h2>Entregate a volar</h2>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav__lista">
+                <li><a class="nav__enlace" href="./index.html">Home</a></li>
+                <li><a class="nav__enlace" href="./nosotros.html">Nosotros</a> </li>
+                <li><a class="nav__enlace" href="./actividades.html">Actividades</a></li>
+                <li><a class="nav__enlace" href="./cerro.html">Cerro</a> </li>
+                <li><a class="nav__enlace" href="./contacto.html">Contacto</a> </li>
+            </ul>        
+        </nav>
+    </div>  
+</header>
+   
+<main>
+    <section class="cajaContacto" >
+        <form action="" >
+            <h2 class="subtituloCentrado tituloClaro sinNegrita">Estamos para ayudarte. Tu consulta no molesta</h2>
+    
+            <div class="formulario parrafoCajaNosotros">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+            </div>
+    
+            <div class="formulario parrafoCajaNosotros">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido">
+            </div>
+    
+            <div class="formulario parrafoCajaNosotros">
+                <label for="email">Correo:</label>
+                <input type="email" id="email">
+            </div>
+    
+            <div class="formulario parrafoCajaNosotros">               
+                <label for="acciones">¿Que quiero hacer?</label>
+                <select name="acciones" id="acciones">
+                    <option value="consulta">Consulta</option>
+                    <option value="reserva">Reserva</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="otro">Otro</option>
+                </select>           
+            </div>
+    
+            <div class="formulario parrafoCajaNosotros">
+                <label for="consulta"></label>
+                <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Deje aquí su comentario"></textarea>
+            </div>
+    
+            <div class="formulario parrafoCajaNosotros">
+                <label for="ofertasypromociones">Quiero recibir ofertas y promociones</label>
+                <input type="checkbox" name="ofertasypromociones" id="ofertasypromociones">
+            </div>
+    
+            <div class="formulario parrafoCajaNosotros">
+                <button class="estiloBotones">Enviar</button>
+                <button type="reset" class="estiloBotones"> Limpiar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="cajaContacto2">
+        <div>
+            <h2 class="subtituloCentrado">Donde estamos:</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d848.8551800162246!2d-75.49583195886645!3d5.844874397320963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46ed102b1d318f%3A0xad7c75a395f23d83!2sAERO%20HOSTAL%20LA%20CASA%20EN%20EL%20AIRE!5e1!3m2!1ses!2sar!4v1645541262233!5m2!1ses!2sar" 
+            class="mapa" width="600" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div>
+            <h2 class="subtituloCentrado">¿Como llegar?</h2>
+            <p class="parrafoInfo">Desde Medellín en bus:
+                Terminal del Norte- Taquilla 5 ( SONAR)- El bus sale todos los días a las 8:30 am. Duración del recorrido 3 horas.
+                Es importante resaltar que es el bus que se dirige a Abejorral por la ruta a anta Bárbara; el tiquete se compra hasta la vereda La Peña. Indicarle al conductor que lo deje en la “tienda la 80” de la vereda la Peña, allí los espera el guía. Regreso a Medellín: 11:30 am.
+                
+                RUTA 1: saliendo desde el Centro Comercial San Diego Caldas- Alto de Minas- Santa Barbara- Fabrica de cementos El Cairo- Vereda La Peña (76 kilómetros, 20  kilómetros carretera destapada)
+                
+                RUTA 2: Saliendo desde el Centro Comercial San Diego vía Las Palmas-Municipio La Ceja, Abejorral, Vereda La Peña (105 kilómetros, 19 kilómetros carretera destapada). día de sol tiene un costo de 24.000$, incluye el acceso y uso de la Casa durante el día. Las demás actividades se pagan adicionales.
+                
+                Desde Medellín hay dos vías: 
+        
+                Vía al Alto de Minas, Santabarbara, girar por la vía a Abejorral o minas del Cairo, 
+                hasta la vereda La Peña. 71 Km.</p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__contenedor">
+        <p class="footer__p"> 
+            Copyright Evelin Gómez
+            Desarrollo Web</p>
+    </div> 
+    <div> 
+        <ul class="footer__lista">
+            <li><a target="_blanck" href="https://www.facebook.com/AeroHostal">
+                <i class="fa-brands fa-facebook-square fa-3x" style="color: bisque;" ></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/lacasa_enelaire/">
+                <i class="fa-brands fa-instagram fa-3x" style="color: bisque;"></i> </a></li> 
+            <li><a href="./contacto.html">
+                <i class="fa-solid fa-envelope fa-3x" style="color: bisque;"></i></a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

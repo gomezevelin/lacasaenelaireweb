@@ -1,0 +1,479 @@
+
+* { 
+    margin: 0%; 
+    padding: 0%;
+    box-sizing: border-box;
+ }
+
+body {
+    background-color:bisque;
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul { list-style-type: none; }
+
+.header {
+    height: 200%;
+    width: 98vw;
+    box-shadow: 5px 8px 11px;
+    padding: 1rem;
+    border-color: rgba(21, 65, 49, 0.548);
+    background-color: rgb(51, 88, 70);
+    margin-left:0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.header__contenedor {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: bisque;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 50px;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+h2{
+    color: bisque;
+    font-size: 30px;
+    font-family: 'Oooh Baby';
+}
+
+.header__titulo {
+    height: 100px;
+}
+
+
+.botonHamburguesa{
+    display:non;
+}
+
+.nav__lista {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__enlace {
+    text-decoration: none;
+    color: bisque;
+    font-size: 125%;
+}
+
+#bannerinicio {
+    width: 100vw;
+    height: 50vw;
+    padding-top: 1rem;
+    border-radius: 15%;
+    margin-bottom: 1rem;
+}
+
+.caja2index__p {
+    font-weight: bold;
+    font-size: 130%;
+    line-height: 1.5;
+    text-align: center;
+    color: bisque;
+    padding: 1rem;
+    background-color: rgba(21, 65, 49, 0.548);
+}
+.caja3index {
+    width: 98vw;    
+    height: 400px;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    border: solid 3px rgba(21, 65, 49, 0.548);
+    padding: 1rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-column-gap: 1rem;
+    align-items: stretch;
+    justify-items:stretch ;
+}
+.caja3index__img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    background-color: rgb(26, 68, 37);
+    height: 250%;
+    width: 98vw;
+    box-shadow: 5px 8px 11px;
+    padding: 1rem;
+}
+
+.footer__p {
+    font-size: 20px;
+    color: bisque;
+}
+
+.footer__lista {
+    display: flex; 
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Segunda página - Nosotros*/
+
+.cajaNosotros {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+    width: 90vw;
+    height: 1500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "origen origen"
+    "valores valores"
+    "recomendaciones recomendaciones";
+    grid-row-gap: 3rem;
+    overflow: hidden;
+
+}
+
+.origen {
+    grid-area: origen; background-color: rgba(21, 65, 49, 0.548);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.valores {
+    grid-area: valores; background-color:  rgba(51, 88, 70, 0.747);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recomendaciones {
+    grid-area: recomendaciones ; background-color: rgba(21, 65, 49, 0.548);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgCajaNosotros {
+    margin-top: 2rem;
+    width: 700px;
+    height: 360px;
+    padding-right: 3rem;
+    padding-left: 2rem;
+}
+
+.parrafoCajaNosotros {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 100%;
+    line-height: 2;
+    text-align: center;
+    color: bisque;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: bold;
+}
+.enlaceParrafo {color: bisque;}
+
+/* Tercera página - Actividades */
+
+.subtituloCentrado{
+    color: rgb(26, 68, 37);
+    text-align: center;
+    text-decoration:underline;
+    font-size: 250%;
+}
+
+.bloqueactividades {
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 410px 410px 410px ;
+    grid-template-rows: 430px 430px;
+    grid-gap: 2rem;
+}
+
+.tarjeta {
+    width: 400px;
+    height: 420px;
+    margin: 1rem;
+    border:rgba(21, 65, 49, 0.548) solid 5px;
+    border-radius: 15px;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+}
+
+.tarjeta__img {
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+}
+
+.tarjeta__p{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: rgb(26, 68, 37);
+    font-weight: bold;
+}
+
+/* Esto seria un carrusell*/
+.galeria__lista{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.galeria__contenedor {
+    width: 450px;
+    height: 400px;
+    margin-top: 2rem;
+    border: 2px solid rgba(21, 65, 49, 0.548);
+    border-radius: 20%;
+    overflow: hidden;
+}
+.galeria__img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Cuarta página - Cerro */
+
+.cerro__contenedorimg {
+    width: 95%;
+    height: 700px;
+    border: solid rgba(21, 65, 49, 0.548) 5px ;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cerro__img {
+    width: 100%;
+    height: 100%;
+}
+
+.cerrosection {
+    display: flex;
+    width: 90vw;
+    height: 500px;
+    margin:4rem;
+    padding: 1rem;
+    background-color: rgba(21, 65, 49, 0.548);
+    overflow: hidden;
+}
+
+.tituloClaro {
+    color: bisque; 
+}
+
+.parrafoInfo {
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: justify;
+    padding: 1rem;
+    color: rgb(26, 68, 37);
+    font-weight: bolder;
+}
+
+.margenAbajo {margin-bottom: 3rem;}
+
+.visitaVirtual{
+    width: 90vw;
+    height: 600px;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Quinta página - Contacto */
+
+.cajaContacto {
+    width: 45vw;
+    height: 560px;
+    border: rgba(21, 65, 49, 0.548) solid 3px;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: rgba(21, 65, 49, 0.548);
+    padding-bottom: 1rem;
+}
+
+.sinNegrita {
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 200%;
+}
+
+.estiloBotones {
+    color: bisque;
+    background-color: rgb(26, 68, 37);
+    font-family: 'Quicksand', sans-serif ;
+    font-size: large;
+    margin: 1rem;
+}
+
+.formulario {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0.5rem;
+    line-height: 1.5;
+}
+
+.cajaContacto2 {
+    display: flex;   
+}
+
+.mapa {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+.gridcaja {
+    width: 800px;
+    height: 500px;
+    border: 5px solid olivedrab;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "item1 item1 item1 "
+    "item2 item2 item3"
+    "item4 item4 item3"
+    "item5 item6 item6";
+}
+
+.gridItem {
+    color: black;
+}
+
+.item1 {
+    grid-area: item1; background: rosybrown;
+}
+.item2 {
+    grid-area: item2; background:rgb(224, 241, 144);
+}
+.item3 {
+    grid-area: item3; background: rgb(172, 207, 252);
+}
+.item4 {
+    grid-area: item4; background: rgb(219, 154, 228);
+}
+.item5 {
+    grid-area: item5; background: rgb(163, 56, 62);
+}
+.item6 {
+    grid-area: item6; background: rgb(247, 175, 81);
+}
+
+
+
+/* Media Querys*/
+
+/* Tablet*/
+
+@media screen and (max-width: 1024px){
+    body {
+        height: auto;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__contenedor {
+        flex-direction: column;
+    }
+    .header__titulo{
+        text-align: center;
+        line-height: 40px;
+        margin-bottom: 0.5rem;
+    }
+
+    .caja3index {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 2rem;
+        height: 800px;
+    }
+    
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer__p {
+        font-size: 15px;
+
+    }
+    .footer__lista {
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .cajaNosotros {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "origen"
+        "origen"
+        "valores" 
+        "valores"
+        "recomendaciones" 
+        "recomendaciones";
+    }
+    .origen {
+        grid-area: origen; background-color: rgba(21, 65, 49, 0.548);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .valores {
+        grid-area: valores; background-color:  rgba(51, 88, 70, 0.747);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .recomendaciones {
+        grid-area: recomendaciones ; background-color: rgba(21, 65, 49, 0.548);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+
+/*Mobile*/
+@media screen and (max-width: 600px){
+    body {
+        background-color: blueviolet;
+    };
+
+    .botonHamburguesa {
+        display: inline-block;
+        border: 5px slateblue solid;
+    }
+    
