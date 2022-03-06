@@ -13,7 +13,6 @@
     <script src="https://kit.fontawesome.com/5766ae100f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>  
@@ -25,14 +24,16 @@
         </div>
 
         <nav class="nav">
-            <a class="botonHamburguesa" href="hamburguesa"><i class="fa-solid fa-bars fa-2x" style="color: bisque; display: inline-block; background-color: blueviolet;"></i></a>
             
-            <ul class="nav__lista">
+            <a class="botonHamburguesa" href="#menuLista"><i class="icono fa-solid fa-bars fa-2x"></i></a>
+            
+            <ul class="nav__lista" id="menuLista">
                 <li><a class="nav__enlace" href="./index.html">Home</a></li>
                 <li><a class="nav__enlace" href="./nosotros.html">Nosotros</a> </li>
                 <li><a class="nav__enlace" href="./actividades.html">Actividades</a></li>
                 <li><a class="nav__enlace" href="./cerro.html">Cerro</a> </li>
                 <li><a class="nav__enlace" href="./contacto.html">Contacto</a> </li>
+                <li><a class="nav__enlace oculto" href="#"><i class=" icono  fa-solid fa-xmark fa-1.5x"></i></a></li>
             </ul>        
         </nav>
     </div>  
@@ -45,10 +46,10 @@
         
     <section>
         <p class="caja2index__p" >
-                Particular y única construcción en madera, colgada a 20 metros de altura en 
-                las paredes de granito del Cerro San Vicente. El  acceso es escalando o por cables. 
-                Tiene una capacidad para 10 personas, cómodas.
-                Cuenta con cocina dotada, baño y dos pisos para acomodación compartida.
+        Particular y única construcción en madera, colgada a 20 metros de altura en 
+        las paredes de granito del Cerro San Vicente. El  acceso es escalando o por cables. 
+        Tiene una capacidad para 10 personas, cómodas.
+        Cuenta con cocina dotada, baño y dos pisos para acomodación compartida.
         </p>
     </section>
 
@@ -59,7 +60,8 @@
  
         <iframe class="iframeIndex" src="https://www.youtube.com/embed/eDDdL6V4I5g" title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>   
+            allowfullscreen>
+        </iframe>   
     </section>  
 </main>   
  

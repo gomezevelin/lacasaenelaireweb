@@ -51,9 +51,8 @@ h2{
     height: 100px;
 }
 
-
 .botonHamburguesa{
-    display:non;
+    display:none;
 }
 
 .nav__lista {
@@ -65,6 +64,14 @@ h2{
     text-decoration: none;
     color: bisque;
     font-size: 125%;
+}
+
+.icono {
+    color: bisque;
+    font-size: 15px;
+}
+.oculto {
+    display: none;
 }
 
 #bannerinicio {
@@ -84,6 +91,7 @@ h2{
     padding: 1rem;
     background-color: rgba(21, 65, 49, 0.548);
 }
+
 .caja3index {
     width: 98vw;    
     height: 400px;
@@ -170,7 +178,6 @@ h2{
 
 .imgCajaNosotros {
     margin-top: 2rem;
-    width: 700px;
     height: 360px;
     padding-right: 3rem;
     padding-left: 2rem;
@@ -188,6 +195,7 @@ h2{
     padding-right: 1rem;
     font-weight: bold;
 }
+
 .enlaceParrafo {color: bisque;}
 
 /* Tercera página - Actividades */
@@ -292,7 +300,7 @@ h2{
     font-weight: bolder;
 }
 
-.margenAbajo {margin-bottom: 3rem;}
+.margenAbajo {margin-bottom: 1.5rem;}
 
 .visitaVirtual{
     width: 90vw;
@@ -305,8 +313,8 @@ h2{
 /* Quinta página - Contacto */
 
 .cajaContacto {
-    width: 45vw;
-    height: 560px;
+    width: 500px;
+    height: 80%;
     border: rgba(21, 65, 49, 0.548) solid 3px;
     margin: auto;
     margin-top: 3rem;
@@ -339,56 +347,24 @@ h2{
 }
 
 .cajaContacto2 {
-    display: flex;   
+  display: flex;
 }
 
 .mapa {
+    display: block;
+    width: 500px;
+    height: 400px;
     margin-top: 1.5rem;
+    margin-left: 1rem;
+}
+
+.parrafoInfo {
     margin-left: 1rem;
 }
 
 
 
 
-
-
-.gridcaja {
-    width: 800px;
-    height: 500px;
-    border: 5px solid olivedrab;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "item1 item1 item1 "
-    "item2 item2 item3"
-    "item4 item4 item3"
-    "item5 item6 item6";
-}
-
-.gridItem {
-    color: black;
-}
-
-.item1 {
-    grid-area: item1; background: rosybrown;
-}
-.item2 {
-    grid-area: item2; background:rgb(224, 241, 144);
-}
-.item3 {
-    grid-area: item3; background: rgb(172, 207, 252);
-}
-.item4 {
-    grid-area: item4; background: rgb(219, 154, 228);
-}
-.item5 {
-    grid-area: item5; background: rgb(163, 56, 62);
-}
-.item6 {
-    grid-area: item6; background: rgb(247, 175, 81);
-}
 
 
 
@@ -416,10 +392,14 @@ h2{
     }
 
     .caja3index {
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         grid-row-gap: 2rem;
-        height: 800px;
+        height: 100%;
+    }
+
+    .iframeIndex {
+        height: 100%;
     }
     
     .footer {
@@ -435,45 +415,154 @@ h2{
     }
 
     .cajaNosotros {
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "origen"
-        "origen"
-        "valores" 
-        "valores"
-        "recomendaciones" 
-        "recomendaciones";
+    width: 98%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;    
     }
+
     .origen {
-        grid-area: origen; background-color: rgba(21, 65, 49, 0.548);
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+       
     }
+
+    .imgCajaNosotros {
+        width: 100%;
+        height: 100%;
+        margin-top: 0%;
+        padding: 1rem;
+    }
+
     .valores {
-        grid-area: valores; background-color:  rgba(51, 88, 70, 0.747);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+       display: flex;
+       flex-direction: column-reverse;
     }
     .recomendaciones {
-        grid-area: recomendaciones ; background-color: rgba(21, 65, 49, 0.548);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+       display: flex;
+       flex-direction: column; 
     }
-    
 
+    .modificacion {
+    width: 98vw;
+    height: 98vw;
+    padding: 1.5rem;
+    }
+    .bloqueactividades{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .tarjeta {
+        width: 350px;
+    }
+    .cerro__contenedorimg {
+        height: 100%;
+        margin: 0% auto;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        
+    }
+    .cerrosection {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
 
+    .imgSectionCerro {
+        overflow: hidden;
+    }
+
+    .visitaVirtual {
+        margin-left: 2.5rem;
+    }
+    .cajaContacto {
+        width: 400px;
+       
+    }
+
+    .cajaContacto2 {
+        flex-direction: column;
+    }
+.tituloTablet {
+    margin-bottom: 1rem;
+}
+   
+.contenedorIframe {
+    width: 98%;
+    height: 60vw;
+    overflow: hidden;
+    margin: 0% auto;
+   
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin top: 0%;
+    margin-left: 0%;
+}
+
+ 
 /*Mobile*/
 @media screen and (max-width: 600px){
-    body {
-        background-color: blueviolet;
-    };
-
-    .botonHamburguesa {
-        display: inline-block;
-        border: 5px slateblue solid;
+ 
+    .nav__lista {
+        background-color: rgba(21, 65, 49, 0.548);
+        width: 80%;
+        height: 70vw;
+        max-width: 400px;
+        transform: translateX(-100%);
+        position: fixed;
+        top: 25%;
+        left: 0%;
+        transition: transform 0.5s;
+        z-index: 100;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
-    
+    #menuLista:target {
+        transform: translateX(0);
+    }
+    .oculto {
+        display: inline-block;
+    }
+
+    .icono{
+        color: bisque;
+        height: 15px;
+        margin-top: 1rem;
+        
+    }
+    .botonHamburguesa {
+        display: block;
+     }
+
+     .header__titulo {
+         font-size: 70px;
+     }
+    .recorte{
+        overflow: hidden;
+    }
+    .imgSectionCerro {
+        display: block;
+    }
+    .visitaVirtual {
+        margin-left: 2rem;
+        height: 400px;
+    }
+
+    .cajaContacto {
+        width: 350px;
+    }
+  
+    .parrafoInfo{
+        text-align: center;
+    }
+  

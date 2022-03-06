@@ -1,0 +1,33 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header__contenedor {
+height: 150px;
+background-color: rebeccapurple;
+display: flex;
+justify-content: space-between;
+}
+
+.header__titulo {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 4rem;
+    color: bisque;
+    letter-spacing: 0.4rem;
+}
+
+.botonHamburguesa {
+    background-color: blue;
+    display: none;
+}
+.icono {
+    color: azure;
+    cursor: pointer;
+}
+.oculto{
+    display: none;
+}

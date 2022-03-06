@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería</title>
+    <title>Nosotros</title>
     <link rel="stylesheet" href="Css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,24 +15,28 @@
 </head>
 
 <body>
-<header class="header">  
-    <div class="header__contenedor">  
-        <div   div class="header__titulo"> 
-            <h1>La casa en el aire</h1>
-            <h2>Entregate a volar</h2>
-        </div>
-
-        <nav class="nav">
-            <ul class="nav__lista">
-                <li><a class="nav__enlace" href="./index.html">Home</a></li>
-                <li><a class="nav__enlace" href="./nosotros.html">Nosotros</a> </li>
-                <li><a class="nav__enlace" href="./actividades.html">Actividades</a></li>
-                <li><a class="nav__enlace" href="./cerro.html">Cerro</a> </li>
-                <li><a class="nav__enlace" href="./contacto.html">Contacto</a> </li>
-            </ul>        
-        </nav>
-    </div>  
-</header>
+    <header class="header">  
+        <div class="header__contenedor">  
+            <div class="header__titulo"> 
+                <h1>La casa en el aire</h1>
+                <h2>Entregate a volar</h2>
+            </div>
+    
+            <nav class="nav">
+                
+                <a class="botonHamburguesa" href="#menuLista"><i class=" icono fa-solid fa-bars fa-2x"></i></a>
+                
+                <ul class="nav__lista" id="menuLista">
+                    <li><a class="nav__enlace" href="./index.html">Home</a></li>
+                    <li><a class="nav__enlace" href="./nosotros.html">Nosotros</a> </li>
+                    <li><a class="nav__enlace" href="./actividades.html">Actividades</a></li>
+                    <li><a class="nav__enlace" href="./cerro.html">Cerro</a> </li>
+                    <li><a class="nav__enlace" href="./contacto.html">Contacto</a> </li>
+                    <li><a class="nav__enlace oculto" href="#"><i class=" icono fa-solid fa-xmark fa-1.5x"></i></a></li>
+                </ul>        
+            </nav>
+        </div>  
+    </header>
     
 <main class="cajaNosotros">
     <section class="origen">
@@ -56,7 +60,7 @@
     
     <section class="valores" >
         <div>
-            <img class="imgCajaNosotros" src="./images/13.jpg" alt="">
+            <img class="imgCajaNosotros modificacion" src="./images/13.jpg" alt="">
         </div>
 
         <div>
@@ -102,8 +106,8 @@
 <footer class="footer">
     <div class="footer__contenedor">
         <p class="footer__p"> 
-            Copyright Evelin Gómez
-            Desarrollo Web</p>
+        Copyright Evelin Gómez
+        Desarrollo Web</p>
     </div> 
     <div> 
         <ul class="footer__lista">
