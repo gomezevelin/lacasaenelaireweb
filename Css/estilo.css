@@ -60,12 +60,31 @@ h2{
     gap: 2rem;
 }
 
-.nav__enlace {
+.nav__enlace{
     text-decoration: none;
     color: bisque;
     font-size: 125%;
+    position: relative;
 }
 
+.nav__enlace::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 1px;
+    background-color: bisque;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.7s;
+}
+
+.nav__enlace:hover::after {
+    transform:scaleX(1);
+    transform-origin: left;
+
+}
 .icono {
     color: bisque;
     font-size: 15px;
@@ -229,7 +248,11 @@ h2{
     padding: 1rem;
     align-items: center;
 }
+.tarjeta:hover {
+    transform: scale(1.2,1.2);
+    transition: 1s;
 
+}
 .tarjeta__img {
     width: 100%;
     height: 80%;
