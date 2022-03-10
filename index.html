@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/5766ae100f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>  
@@ -54,13 +55,15 @@
     </section>
 
     <section class="caja3index">
-        <div class="caja3index__contenedorimg">
+        <div class="caja3index__contenedorimg" data-aos="fade-right" data-aos-offset="400"
+        data-aos-easing="ease-in-sine">
             <img class="caja3index__img" src="./images/reemplazo.jpg" alt="15">
         </div>
  
-        <iframe class="iframeIndex" src="https://www.youtube.com/embed/eDDdL6V4I5g" title="YouTube video player" frameborder="0" 
+        <iframe class="iframeIndex" data-aos="fade-left" src="https://www.youtube.com/embed/eDDdL6V4I5g" title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
+            allowfullscreen data-aos-offset="400"
+            data-aos-easing="ease-in-sine">
         </iframe>   
     </section>  
 </main>   
@@ -74,13 +77,15 @@
     <div> 
         <ul class="footer__lista">
             <li><a target="_blanck" href="https://www.facebook.com/AeroHostal">
-                <i class="fa-brands fa-facebook-square fa-3x" style="color: bisque;" ></i></a></li>
+                <i class="fa-brands fa-facebook-square fa-3x tamañoReducidoI" style="color: bisque;" ></i></a></li>
             <li><a target="_blank" href="https://www.instagram.com/lacasa_enelaire/">
-                <i class="fa-brands fa-instagram fa-3x" style="color: bisque;"></i> </a></li> 
+                <i class="fa-brands fa-instagram fa-3x tamañoReducidoI" style="color: bisque;"></i> </a></li> 
             <li><a href="./contacto.html">
-                <i class="fa-solid fa-envelope fa-3x" style="color: bisque;"></i></a></li>
+                <i class="fa-solid fa-envelope fa-3x tamañoReducidoI" style="color: bisque;"></i></a></li>
         </ul>
     </div>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>

@@ -89,7 +89,8 @@ h2{
     text-align: center;
     color: bisque;
     padding: 1rem;
-    background-color: rgba(21, 65, 49, 0.548);
+    background: rgb(12,71,36);
+    background: radial-gradient(circle, rgba(12,71,36,1) 0%, rgba(79,91,24,1) 35%, rgba(2,54,32,1) 100%);
 }
 
 .caja3index {
@@ -542,9 +543,14 @@ h2{
         display: block;
      }
 
-     .header__titulo {
+    .header__titulo {
          font-size: 70px;
      }
+
+    .tamañoReducidoI {
+        font-size: 30px;
+    }
+
      .caja2index__p {
          font-size: 80%;
      }
