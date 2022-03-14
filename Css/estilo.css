@@ -9,7 +9,7 @@
     background-color:bisque;
     font-family: 'Quicksand', sans-serif;
     max-width: 1250px;
-    margin: 0 auto; 
+    margin: 0% auto; 
 }
 
 ul { list-style-type: none; }
@@ -158,6 +158,7 @@ ul {margin-bottom: 0rem;}
     border-color: rgba(21, 65, 49, 0.548);
     background-color: rgb(51, 88, 70);
     margin-top: 0.5rem;
+    max-width: 1250px;
 }
 
 .footer__contenedor { 
@@ -269,24 +270,23 @@ ul {margin-bottom: 0rem;}
 }
 
 .bloqueactividades {
-    margin-left: 2rem;
     margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 410px 410px 410px ;
     grid-template-rows: 430px 430px;
-    grid-gap: 1.3rem;
+    grid-gap: 0.5rem;
 }
 
 .tarjeta {
     width: 400px;
     height: 420px;
-    margin: 1rem;
+    margin-top: 1rem;
     border:rgba(21, 65, 49, 0.548) solid 5px;
     border-radius: 15px;
     overflow:hidden;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0.5rem;
     align-items: center;
 }
 .tarjeta:hover {
@@ -312,6 +312,10 @@ ul {margin-bottom: 0rem;}
 .imagenCarrusel {
     width: 100%;
     height: 100%;
+}
+
+.marginB {
+    margin-bottom: 1rem;
 }
 
 /* Cuarta página - Cerro */
@@ -505,7 +509,7 @@ ul {margin-bottom: 0rem;}
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-        gap: 0rem;
+        gap: 2rem;
     }
     
     .tarjeta { width: 350px;}
@@ -592,7 +596,7 @@ ul {margin-bottom: 0rem;}
 
     .tamañoReducidoI {font-size: 25px;}
     
-    .bloqueactividades {margin-left: 0.5rem;}
+    .bloqueactividades {gap: 0.5rem;}
 
     .caja2index__p {font-size: 80%;}
 
@@ -641,4 +645,6 @@ ul {margin-bottom: 0rem;}
     .iframeIndexContenedor {
         width: 17rem;
         height: 15rem;}
+    .tarjeta__img {padding: 0.3rem;}
+    .footer { margin-left: 0.2rem;}
 }
