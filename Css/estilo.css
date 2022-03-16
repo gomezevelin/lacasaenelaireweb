@@ -165,6 +165,7 @@ ul {margin-bottom: 0rem;}
 .footer__lista {
     display: flex; 
     gap: 3rem;
+    padding-left: 0%;
 }
 
 .tamañoReducidoI {
@@ -498,7 +499,6 @@ padding: 1rem;
 
     .iframeIndexContenedor {
         height: 25rem;
-        width: 35rem;
         margin: 0% auto;
     }
 
@@ -531,7 +531,9 @@ padding: 1rem;
     .parrafoCajaNosotros {
         height: 17rem;    
     }
-
+    .nosotros__img {
+        width: auto;
+    }
     .bloqueactividades{
         display: flex;
         flex-wrap: wrap;
@@ -633,7 +635,6 @@ padding: 1rem;
     .caja3index__img { height: 18rem;}
     
     .iframeIndexContenedor { 
-        width: 25rem;
         height: 15rem;}
         
     .recorte{ overflow: hidden;}
@@ -655,15 +656,11 @@ padding: 1rem;
 }
     
 @media screen and (max-width: 770px) {
-    .iframeIndexContenedor{
-        width: 30rem;
-    }
+  
 }
 
 @media screen and (max-width: 570px){
-    .iframeIndexContenedor {
-        width: 24rem;
-    }
+ 
 }
     
 @media screen and (max-width: 402px){
@@ -672,9 +669,14 @@ padding: 1rem;
     .caja3index__img {height: 15rem;}
     .icono {margin-top: 2rem;} 
     .botonHamburguesa {margin-top: 2rem;}  
-    .iframeIndexContenedor {
-        width: 17rem;
-        height: 15rem;}
+    .iframeIndexContenedor {height: 15rem;}
     .tarjeta__img {padding: 0.3rem;}
     .footer { margin-left: 0.2rem;}
+}
+
+@media screen and (max-width: 323px){
+    
+    .footer__p { font-size: 12px;}
+    .tamañoReducidoI {font-size: 20px;}
+    .iframeIndex {width: auto;}
 }
