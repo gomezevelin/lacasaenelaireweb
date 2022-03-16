@@ -97,50 +97,7 @@
     }
 
 
-    .cajaNosotros {
-        margin: 0% auto;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        padding-top: 1.5rem;
-        width: 95%;
-        height: 1500px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "origen origen"
-        "valores valores"
-        "recomendaciones recomendaciones";
-        grid-row-gap: 3rem;
-        overflow: hidden;
-    }
 
-
-    
-.origen {
-    grid-area: origen; background-color: rgba(21, 65, 49, 0.548);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.valores {
-    grid-area: valores; background-color:  rgba(51, 88, 70, 0.747);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.recomendaciones {
-    grid-area: recomendaciones ; background-color: rgba(21, 65, 49, 0.548);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.recomendaciones__p {
-    line-height: 0.1rem;
-}
 
 .cajaImgNosotros {
     padding: 1rem;
