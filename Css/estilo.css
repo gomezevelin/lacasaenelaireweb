@@ -197,50 +197,21 @@ ul {margin-bottom: 0rem;}
 
 /* Segunda página - Nosotros*/
 
-.cajaNosotros {
-    margin: 0% auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-top: 1.5rem;
-    width: 95%;
-    height: 1500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "origen origen"
-    "valores valores"
-    "recomendaciones recomendaciones";
-    grid-row-gap: 3rem;
-    overflow: hidden;
+
+.sinMargin {
+    margin: 0 auto;
 }
 
-.origen {
-    grid-area: origen; background-color: rgba(21, 65, 49, 0.548);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.nosotros__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.valores {
-    grid-area: valores; background-color:  rgba(51, 88, 70, 0.747);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.recomendaciones {
-    grid-area: recomendaciones ; background-color: rgba(21, 65, 49, 0.548);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .imgCajaNosotros {
-    margin-top: 2rem;
     height: 360px;
     padding-right: 3rem;
     padding-left: 2rem;
+    margin-top: 1.8rem;
 }
 
 .parrafoCajaNosotros {
@@ -252,11 +223,43 @@ ul {margin-bottom: 0rem;}
     color: bisque;
     padding-top: 1rem;
     padding-left: 1rem;
-    padding-right: 1rem;
     font-weight: bold;
+    margin-bottom: 0.3rem;
 }
 
 .enlaceParrafo {color: bisque;}
+
+.color {background-color: rgba(51, 88, 70, 0.747);}
+
+.sinPadding {
+    padding: 0%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.margintop {margin-top: 2rem;}
+
+.tamañoLetra {
+    margin-left: 2rem;
+}
+
+.tarjetaStaff {
+    background-color: rgba(21, 65, 49, 0.548);
+    padding: 1rem;
+}
+
+.tarjetaStaff__img {margin-bottom: 0.5rem;}
+
+.tarjetaStaff__h2 {text-decoration: none;}
+
+.tarjetaStaff__p {
+    font-weight: bolder;
+    color: bisque;
+}
+
+.tarjeta__altura {
+    height: 100%;
+}
 
 /* Tercera página - Actividades */
 
@@ -321,11 +324,9 @@ ul {margin-bottom: 0rem;}
 /* Cuarta página - Cerro */
 
 .cerro__contenedorimg {
-    width: 95%;
-    height: 700px;
+    height: 600px;
     border: solid rgba(21, 65, 49, 0.548) 5px ;
     margin-top: 2rem;
-    margin-left: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -334,35 +335,47 @@ ul {margin-bottom: 0rem;}
     height: 100%;
 }
 
-.cerrosection {
-    display: flex;
-    width: 90vw;
-    height: 500px;
-    margin:4rem;
-    padding: 1rem;
-    background-color: rgba(21, 65, 49, 0.548);
-    overflow: hidden;
-}
-
 .tituloClaro {color: bisque;}
 
 .parrafoInfo {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.3;
-    text-align: justify;
+    text-align: center;
     padding: 1rem;
-    color: rgb(26, 68, 37);
+    color:bisque;
     font-weight: bolder;
 }
 
+.cerro__p {padding-right: 1rem;}
+
 .margenAbajo {margin-bottom: 1.5rem;}
 
+.cajaIframe {
+    height: 700px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cajaVisitaVirtual {
+    width: 1000px;
+    height: 800px;
+    margin-bottom: 2rem;
+}
+
 .visitaVirtual{
-    width: 90vw;
-    height: 600px;
-    margin-left: 4rem;
+    margin-left: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.imgSectionCerro{
+    width: 100%;
+    height: 100%;
 }
 
 /* Quinta página - Contacto */
@@ -380,7 +393,7 @@ ul {margin-bottom: 0rem;}
 }
 
 .sinNegrita {
-    font-weight: lighter;
+    font-weight:500 ;
     text-decoration: none;
     font-size: 200%;
 }
@@ -391,6 +404,7 @@ ul {margin-bottom: 0rem;}
     font-family: 'Quicksand', sans-serif ;
     font-size: large;
     margin: 1rem;
+    padding: 0.2rem;
 }
 
 .formulario {
@@ -401,17 +415,19 @@ ul {margin-bottom: 0rem;}
     line-height: 1.5;
 }
 
-.cajaContacto2 {display: flex;}
-
 .mapa {
-    display: block;
-    width: 500px;
-    height: 400px;
-    margin-top: 1.5rem;
-    margin-left: 1rem;
+    width: 100%;
+    height: 350px;
 }
 
-.parrafoInfo {margin-left: 1rem;}
+
+.parrafoLlegar {
+    color: bisque;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    background-color: rgba(21, 65, 49, 0.548);
+    border: 3px rgba(51, 88, 70, 0.747) solid;
+}
 
 /* Media Querys*/
 
@@ -468,42 +484,19 @@ ul {margin-bottom: 0rem;}
     }
     .tamañoReducidoI{font-size: 32px;}
 
-    .cajaNosotros {
-    width: 98%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;    
+    /* Nueva parte bs en nos 1024*/
+   
+    .tamañoLetra {
+        margin-left: 0%;
+    }
+    .cajaImgNosotros {
+        width: 35rem;
+        justify-content: center;
+    }
+    .parrafoCajaNosotros {
+        height: 17rem;    
     }
 
-    .origen {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imgCajaNosotros {
-        width: 100%;
-        height: 100%;
-        margin-top: 0%;
-        padding: 1rem;
-    }
-
-    .valores {
-       display: flex;
-       flex-direction: column-reverse;
-    }
-    
-    .recomendaciones {
-       display: flex;
-       flex-direction: column; 
-    }
-
-    .modificacion {
-    width: 98vw;
-    height: 98vw;
-    padding: 1.5rem;
-    }
-    
     .bloqueactividades{
         display: flex;
         flex-wrap: wrap;
@@ -541,23 +534,25 @@ ul {margin-bottom: 0rem;}
     
     .tituloTablet { margin-bottom: 1rem;}
    
-    .contenedorIframe {
-        width: 98%;
-        height: 60vw;
-        overflow: hidden;
-        margin: 0% auto;
-    }
+
 
     .mapa {
         width: 100%;
-        height: 100%;
-        display: block;
+        height: 22rem;
         margin-top: 0%;
         margin-left: 0%;
     }
 
     .parrafoInfo {font-size: 80%;}
 }
+
+@media screen and (max-width: 992px){
+
+    .mt__tarjeta {margin-top: 1rem;}
+
+}
+
+
 
 /*Mobile*/
 

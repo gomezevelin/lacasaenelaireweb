@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cerro</title>
-    <link rel="stylesheet" href="Css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5766ae100f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/estilo.css">
 </head>
 
 <body class="body">
@@ -39,29 +42,39 @@
     <section class="cerro__contenedorimg  margenAbajo">
             <img class="cerro__img" src="./images/cerrogrande.jpg" alt="cerrogrande">
     </section>
-    
-    <section class="cerrosection">
-        <div class="margenAbajo">
-            <h2 class="subtituloCentrado tituloClaro">Cerro San Vicente</h2> 
-            <p class="parrafoInfo">El Cerro San Vicente es una montaña piramidal y mirador natural ubicado a 15 kilómetros 
-                de la zona urbana de Abejorral, cerca a las veredas de San Jose, Portugal y la Peña, 
-                posee una excelente panorámica de gran parte del oriente y suroeste antioqueño, es el 
-                cerro más significativo de la población, a 2.500 metros sobre el nivel del mar, por
-                su imponencia dentro del contexto natural. Lugar donde las prácticas guaqueras hacen 
-                parte del paisaje natural y en donde cuya cima los escaladores llegan para abrir sus brazos 
-                y echarse a volar en parapente.</p>
-        </div>   
-        
-        <div class="recorte">
-            <img class="imgSectionCerro" src="./images/12.jpg" alt="12">        
-        </div>
+
+    <section class="container sinPadding" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
+        <div class="row sinMargin color rounded-3">
+            <div class="col-12 cajaImgNosotros rounded">
+                <img class="imgSectionCerro" src="./images/12.jpg" alt="12">
+            </div>
+            
+            <div class="col-12 parrafoCajaNosotros">
+                <h2 class="subtituloCentrado tituloClaro">Cerro San Vicente</h2> 
+                <p class="parrafoInfo cerro__p">El Cerro San Vicente es una montaña piramidal y mirador natural ubicado a 15 kilómetros 
+                    de la zona urbana de Abejorral, cerca a las veredas de San Jose, Portugal y la Peña, 
+                    posee una excelente panorámica de gran parte del oriente y suroeste antioqueño, es el 
+                    cerro más significativo de la población, a 2.500 metros sobre el nivel del mar, por
+                    su imponencia dentro del contexto natural. Lugar donde las prácticas guaqueras hacen 
+                    parte del paisaje natural y en donde cuya cima los escaladores llegan para abrir sus brazos 
+                    y echarse a volar en parapente.</p>
+            </div>   
+        </div>  
     </section>
 
     <section>
+    <div class="cajaIframe">
         <h2  class="h2 subtituloCentrado">Visita Virtual. Conocé el cerro.</h2>
-        <iframe class="visitaVirtual" src="https://www.google.com/maps/embed?pb=!4v1645455411855!6m8!1m7!1sCAoSLEFGMVFpcE5GT3Z4clJuLWpmT2VEZVJwOWh1SHFBU1gwQVZPY1hOM2ZkVFBf!2m2!1d5.845294!2d-75.495505!3f89.04326750047358!4f9.604704780695215!5f0.42322374648317934" 
-        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="cajaVisitaVirtual">
+            <iframe class="visitaVirtual" src="https://www.google.com/maps/embed?pb=!4v1645455411855!6m8!1m7!1sCAoSLEFGMVFpcE5GT3Z4clJuLWpmT2VEZVJwOWh1SHFBU1gwQVZPY1hOM2ZkVFBf!2m2!1d5.845294!2d-75.495505!3f89.04326750047358!4f9.604704780695215!5f0.42322374648317934" 
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+        
     </section>
+    
 </main>
 
 <footer class="footer">
@@ -81,5 +94,9 @@
         </ul>
     </div>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

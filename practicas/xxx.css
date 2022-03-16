@@ -39,6 +39,109 @@
     grid-area: item6; background: rgb(247, 175, 81);
 }
 
+/*Cambio en Css por bs pagina nosotros*/
+.cajaNosotros {
+    width: 98%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;    
+    }
+
+    .origen {
+        display: flex;
+        flex-direction: column;
+    }
 
 
+    .imgCajaNosotros {
+        width: 100%;
+        height: 100%;
+        margin-top: 0%;
+        padding: 1rem;
+    }
 
+    .valores {
+       display: flex;
+       flex-direction: column-reverse;
+    }
+    
+    .recomendaciones {
+       display: flex;
+       flex-direction: column; 
+    }
+
+    .modificacion {
+    width: 98vw;
+    height: 98vw;
+    padding: 1.5rem;
+    }
+
+
+    .cerrosection {
+        display: flex;
+        width: 90vw;
+        height: 500px;
+        margin:4rem;
+        padding: 1rem;
+        background-color: rgba(21, 65, 49, 0.548);
+        overflow: hidden;
+    }
+
+    .visitaVirtual{
+        width: 90vw;
+        height: 600px;
+        margin-left: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .cajaNosotros {
+        margin: 0% auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-top: 1.5rem;
+        width: 95%;
+        height: 1500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "origen origen"
+        "valores valores"
+        "recomendaciones recomendaciones";
+        grid-row-gap: 3rem;
+        overflow: hidden;
+    }
+
+
+    
+.origen {
+    grid-area: origen; background-color: rgba(21, 65, 49, 0.548);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valores {
+    grid-area: valores; background-color:  rgba(51, 88, 70, 0.747);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recomendaciones {
+    grid-area: recomendaciones ; background-color: rgba(21, 65, 49, 0.548);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recomendaciones__p {
+    line-height: 0.1rem;
+}
+
+.cajaImgNosotros {
+    padding: 1rem;
+}
