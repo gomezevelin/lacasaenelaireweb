@@ -138,20 +138,6 @@ ul {margin-bottom: 0rem;}
     object-fit: cover;   
 }
 
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 0.5rem;
-    margin-top: 1rem;
-    background-color: rgb(26, 68, 37);
-    height: 250%;
-    width: 98vw;
-    box-shadow: 5px 8px 11px;
-    padding: 1rem;
-}
-
 .footer{
     height: 120px;
     box-shadow: 5px 8px 11px;
@@ -269,14 +255,6 @@ ul {margin-bottom: 0rem;}
     text-decoration:underline;
     font-size: 220%;
     font-family: 'Oooh Baby';
-}
-
-.bloqueactividades {
-    margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 410px 410px 410px ;
-    grid-template-rows: 430px 430px;
-    grid-gap: 0.5rem;
 }
 
 .tarjeta {

@@ -145,3 +145,10 @@
 .cajaImgNosotros {
     padding: 1rem;
 }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+}
