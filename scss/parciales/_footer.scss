@@ -1,0 +1,34 @@
+.footer{
+    height: 120px;
+    box-shadow: 5px 8px 11px;
+    padding: 1rem;
+    border-color: rgba(21, 65, 49, 0.548);
+    background-color: rgb(51, 88, 70);
+    margin-top: 0.5rem;
+    max-width: 1250px;
+    
+    &__contenedor { 
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__p {
+        font-size: 20px;
+        color: bisque;
+        margin-bottom: 0%;
+    }
+
+    &__lista {
+        display: flex; 
+        gap: 3rem;
+        padding-left: 0%;
+    }
+}
+
+.tamañoReducidoI {
+    font-size: 2rem;
+    text-align: center;
+}

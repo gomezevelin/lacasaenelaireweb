@@ -1,0 +1,211 @@
+/* Media Querys*/
+
+/* Tablet*/
+
+@media screen and (max-width: 1024px){
+
+    .body {height: auto;}
+    
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header__contenedor {flex-direction: column;}
+    
+    .header__titulo{
+        text-align: center;
+        line-height: 40px;
+        margin-bottom: 0.5rem;
+    }
+
+    .nav__lista {margin-top: 1rem;}
+
+    .caja3index {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 1rem;
+        height: 100%;
+    }
+
+    .iframeIndexContenedor {
+        height: 25rem;
+        margin: 0% auto;
+    }
+
+    .iframeIndex { height: 100%;}
+    
+    .footer { flex-direction: column-reverse;}
+    
+    .footer__p { font-size: 15px;}
+    
+    .footer__lista {
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .footer__contenedor {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .tamañoReducidoI{font-size: 32px;}
+
+    /* Nueva parte bs en nos 1024*/
+   
+    .tamañoLetra {
+        margin-left: 0%;
+    }
+    .cajaImgNosotros {
+        width: 35rem;
+        justify-content: center;
+    }
+    .parrafoCajaNosotros {
+        height: 17rem;    
+    }
+    .nosotros__img {
+        width: auto;
+    }
+    .bloqueactividades{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        gap: 2rem;
+    }
+    
+    .tarjeta { width: 350px;}
+    
+    .cerro__contenedorimg {
+        height: 100%;
+        margin: 0% auto;
+        margin-bottom: 2rem;
+        margin-top: 1rem;    
+    } 
+
+    .cerrosection {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .imgSectionCerro { overflow: hidden;}
+
+    .altura {height: 400px;}
+
+    .visitaVirtual { margin-left: 2.5rem;}
+    
+    .cajaContacto {width: 400px;}
+
+    .cajaContacto2 {flex-direction: column;}
+    
+    .tituloTablet { margin-bottom: 1rem;}
+   
+    .mapa {
+        width: 100%;
+        height: 22rem;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+
+    .parrafoInfo {font-size: 80%;}
+}
+
+@media screen and (max-width: 992px){
+
+    .mt__tarjeta {margin-top: 1rem;}
+
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 600px){
+ 
+    .nav__lista {
+        background-color: $coloroscuro21;
+        width: 80%;
+        height: 70%;
+        max-width: 400px;
+        transform: translateX(-100%);
+        position: fixed;
+        top: 25%;
+        left: 0%;
+        transition: transform 0.5s;
+        z-index: 100;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #menuLista:target {transform: translateX(0);}
+    
+    .oculto { display: inline-block;}
+
+    .icono{
+        color: $colorclaro;
+        font-size: 15px;  
+    }
+
+    .botonHamburguesa {
+        display: block; 
+        margin-top: 1rem;}
+
+    .header__titulo {font-size: 70px;}
+
+    .tamañoReducidoI {font-size: 25px;}
+    
+    .bloqueactividades {gap: 0.5rem;}
+
+    .caja2index__p {font-size: 80%;}
+
+    .caja3index__img { height: 18rem;}
+    
+    .iframeIndexContenedor { 
+        height: 15rem;}
+        
+    .recorte{ overflow: hidden;}
+    
+    .imgSectionCerro { display: block;}
+
+    .altura {height: 300px;}
+
+    .visitaVirtual {
+        margin-left: 2rem;
+        height: 400px;
+    }
+
+    .cajaContacto {width: 350px;}
+  
+    .parrafoInfo {text-align: center;}
+
+    .footer__p {font-size: 15px;}
+}
+    
+@media screen and (max-width: 770px) {
+  
+}
+
+@media screen and (max-width: 570px){
+ 
+}
+    
+@media screen and (max-width: 402px){
+
+    #bannerinicio {height:15rem;}
+    .caja3index__img {height: 15rem;}
+    .icono {margin-top: 2rem;} 
+    .botonHamburguesa {margin-top: 2rem;}  
+    .iframeIndexContenedor {height: 15rem;}
+    .tarjeta__img {padding: 0.3rem;}
+    .footer { margin-left: 0.2rem;}
+}
+
+@media screen and (max-width: 323px){
+    
+    .footer__p { font-size: 12px;}
+    .tamañoReducidoI {font-size: 20px;}
+    .iframeIndex {width: auto;}
+}

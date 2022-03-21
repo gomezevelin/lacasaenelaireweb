@@ -1,0 +1,78 @@
+* { 
+    margin: 0%; 
+    padding: 0%;
+    box-sizing: border-box;
+ }
+
+.body {
+    background-color:$colorclaro;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 1250px;
+    margin: 0% auto; 
+}
+
+ul { list-style-type: none; }
+
+
+.margenDerecho {
+    position: absolute;
+    margin-top: 0%;
+}
+
+.h1 {
+    color: $colorclaro;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 50px;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 8px;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+.h2{
+    color: $colorclaro;
+    font-size: 30px;
+    font-family: 'Oooh Baby';
+    font-weight: bold;
+}
+
+.sinMargin {margin: 0 auto;}
+
+.enlaceParrafo {color: $colorclaro;}
+
+.color {background-color: $coloroscuro51;}
+
+.sinPadding {
+    padding: 0%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.margintop {margin-top: 2rem;}
+
+.estiloBotones {
+    color: $colorclaro;
+    background-color: rgb(26, 68, 37);
+    font-family: 'Quicksand', sans-serif ;
+    font-size: large;
+    margin: 1rem;
+    padding: 0.2rem;
+}
+
+.margenAbajo {margin-bottom: 1.5rem;}
+
+.tituloClaro {color: $colorclaro;}
+
+.marginB {
+    margin-bottom: 1rem;
+}
+
+.subtituloCentrado{ 
+    color: rgb(12,71,36);
+    font-weight: bolder;
+    text-align: center;
+    text-decoration:underline;
+    font-size: 220%;
+    font-family: 'Oooh Baby';
+}

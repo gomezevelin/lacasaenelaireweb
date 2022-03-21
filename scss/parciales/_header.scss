@@ -1,0 +1,63 @@
+.header {
+    box-shadow: 5px 8px 11px;
+    padding: 1rem;
+    border-color: $coloroscuro21;
+    background-color: rgb(51, 88, 70);
+    margin-bottom: 1rem;
+
+        &__contenedor {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        &__titulo {height: 100px;}
+}
+
+.botonHamburguesa {display:none;}
+
+.nav__lista {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__enlace{
+    text-decoration: none;
+    color: $colorclaro;
+    font-size: 125%;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 1px;
+        background-color: $colorclaro;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.7s;
+    }
+
+    &:hover {
+        color:$colorclaro;
+    }
+
+    &:hover::after {
+        transform:scaleX(1);
+        transform-origin: left;
+    }
+}
+
+.icono {
+    color: $colorclaro;
+    font-size: 15px;
+}
+
+.oculto {display: none;}
+
+ul {margin-bottom: 0rem;}
