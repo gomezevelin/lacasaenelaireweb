@@ -42,109 +42,78 @@
     </header>
     
 <main>
-
-    <section>
-        <div><h2 class="subtituloCentrado tituloTablet">Conocenos:</h2></div>
-        <div class="container margintop ">
-            <div class="row">
-                <div class="col-lg-4 text-center">
-                    <div class="tarjetaStaff ">
-                        <img class="img-fluid rounded-circle tarjetaStaff__img" src="https://randomuser.me/api/portraits/men/31.jpg" alt="Dueño Creador">
-                        <h2 class="subtituloCentrado tarjetaStaff__h2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nilton López</font></font></h2>       
-                        <p class="tarjetaStaff__p "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                        </font><font style="vertical-align: inherit;" > Es su dueño, la imaginó y hoy atiende personalmente todos 
-                        sus visitantes. Escalador paisa con 15 años de experiencia.</font></font>
-                        </p>
-                    </div>
-                </div>        
+    <section  >
+<div class="container">
+    <div class="row">
+        <div class="col-12 sinPL">
+            <div class="cajaContacto">
+                <form action="" >
+                    <h2 class="h2 subtituloCentrado tituloClaro sinNegrita">Estamos para ayudarte. Tu consulta no molesta</h2>
             
-                <div class="col-lg-4 text-center mt__tarjeta">
-                    <div class="tarjetaStaff tarjeta__altura ">
-                        <img class="img-fluid rounded-circle tarjetaStaff__img" src="https://randomuser.me/api/portraits/women/86.jpg" alt="Cocinera">
-                        <h2 class="subtituloCentrado tarjetaStaff__h2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Silvia Pérez</font></font></h2>       
-                        <p class="tarjetaStaff__p "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                        </font><font style="vertical-align: inherit;" >Acompañante y guía en todos los protocolos de seguridad en cada una de nuestras actividades.</font></font>
-                        </p>
+                    <div class="formulario parrafoCajaNosotros">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre">
                     </div>
-                </div>   
             
-                <div class="col-lg-4 text-center mt__tarjeta">
-                    <div class="tarjetaStaff tarjeta__altura">
-                        <img class="img-fluid rounded-circle tarjetaStaff__img" src="https://randomuser.me/api/portraits/men/43.jpg" alt="guia">
-                        <h2 class="subtituloCentrado tarjetaStaff__h2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Juan Manón</font></font></h2>       
-                        <p class="tarjetaStaff__p "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                        </font><font style="vertical-align: inherit;" > Guía escalador turístico encargado de todas las actividades que proponemos en nuestra casa.</font></font>
-                        </p>
+                    <div class="formulario parrafoCajaNosotros">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido">
                     </div>
-                </div>   
+            
+                    <div class="formulario parrafoCajaNosotros">
+                        <label for="email">Correo:</label>
+                        <input type="email" id="email">
+                    </div>
+            
+                    <div class="formulario parrafoCajaNosotros">               
+                        <label for="acciones">¿Que quiero hacer?</label>
+                        <select name="acciones" id="acciones">
+                            <option value="consulta">Consulta</option>
+                            <option value="reserva">Reserva</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="reclamo">Reclamo</option>
+                            <option value="otro">Otro</option>
+                        </select>           
+                    </div>
+            
+                    <div class="formulario parrafoCajaNosotros">
+                        <label for="consulta"></label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Deje aquí su comentario"></textarea>
+                    </div>
+            
+                    <div class="formulario parrafoCajaNosotros">
+                        <label for="ofertasypromociones">Quiero recibir ofertas y promociones</label>
+                        <input type="checkbox" name="ofertasypromociones" id="ofertasypromociones">
+                    </div>
+            
+                    <div class="formulario parrafoCajaNosotros">
+                        <button class="estiloBotones">Enviar</button>
+                        <button type="reset" class="estiloBotones"> Limpiar</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
-
-    <section class="cajaContacto" >
-        <form action="" >
-            <h2 class="h2 subtituloCentrado tituloClaro sinNegrita">Estamos para ayudarte. Tu consulta no molesta</h2>
-    
-            <div class="formulario parrafoCajaNosotros">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre">
-            </div>
-    
-            <div class="formulario parrafoCajaNosotros">
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido">
-            </div>
-    
-            <div class="formulario parrafoCajaNosotros">
-                <label for="email">Correo:</label>
-                <input type="email" id="email">
-            </div>
-    
-            <div class="formulario parrafoCajaNosotros">               
-                <label for="acciones">¿Que quiero hacer?</label>
-                <select name="acciones" id="acciones">
-                    <option value="consulta">Consulta</option>
-                    <option value="reserva">Reserva</option>
-                    <option value="sugerencia">Sugerencia</option>
-                    <option value="reclamo">Reclamo</option>
-                    <option value="otro">Otro</option>
-                </select>           
-            </div>
-    
-            <div class="formulario parrafoCajaNosotros">
-                <label for="consulta"></label>
-                <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Deje aquí su comentario"></textarea>
-            </div>
-    
-            <div class="formulario parrafoCajaNosotros">
-                <label for="ofertasypromociones">Quiero recibir ofertas y promociones</label>
-                <input type="checkbox" name="ofertasypromociones" id="ofertasypromociones">
-            </div>
-    
-            <div class="formulario parrafoCajaNosotros">
-                <button class="estiloBotones">Enviar</button>
-                <button type="reset" class="estiloBotones"> Limpiar</button>
-            </div>
-        </form>
+    </div>
+</div>
     </section>
 
     <section class="cajaContacto2">
         <div class="container">
             <div class="row">
-                <div class=" col-6">
+                <div class=" col-6 margenAbajo" data-aos="zoom-out" data-aos-duration="3000">
                     <div>
                         <h2 class="subtituloCentrado tituloTablet">Donde estamos:</h2>
-                        <div class="contenedorIframe">
+                        <div class="contenedorIframe margintop">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d848.8551800162246!2d-75.49583195886645!3d5.844874397320963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46ed102b1d318f%3A0xad7c75a395f23d83!2sAERO%20HOSTAL%20LA%20CASA%20EN%20EL%20AIRE!5e1!3m2!1ses!2sar!4v1645541262233!5m2!1ses!2sar" 
                             class="mapa" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-6 margenAbajo"  data-aos="zoom-out" data-aos-duration="2000">
                     <div class="cajaLlegar">
                         <h2 class="h2 subtituloCentrado">¿Como llegar?</h2>
-                        <p class="parrafoLlegar">Desde Medellín en bus:
+                        <p class="parrafoLlegar margintop ">Desde Medellín en bus:
                         Terminal del Norte- Taquilla 5- El bus sale todos los días a las 8:30 am. Duración del recorrido 3 horas.
                         Es importante resaltar que es el bus que se dirige a Abejorral por la ruta a anta Bárbara; el tiquete se compra hasta la vereda La Peña. Indicarle al conductor que lo deje en la “tienda la 80” de la vereda la Peña, allí los espera el guía.
                         

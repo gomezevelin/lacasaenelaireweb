@@ -1,3 +1,14 @@
+.container__reset { 
+    margin: 0%; 
+    padding: 0%; 
+} 
+
+.row__reset { 
+    margin-left: 0%; 
+    margin-right: 0%; 
+    padding: 0%; 
+} 
+
 * { 
     margin: 0%; 
     padding: 0%;
@@ -12,12 +23,6 @@
 }
 
 ul { list-style-type: none; }
-
-
-.margenDerecho {
-    position: absolute;
-    margin-top: 0%;
-}
 
 .h1 {
     color: $colorclaro;
@@ -37,36 +42,43 @@ ul { list-style-type: none; }
     font-weight: bold;
 }
 
-.sinMargin {margin: 0 auto;}
-
 .enlaceParrafo {color: $colorclaro;}
 
 .color {background-color: $coloroscuro51;}
 
 .sinPadding {
     padding: 0%;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+}
+
+.sinPL {
+    padding-left: 0%;
+}
+.paddingB {
+    padding-bottom: 1rem;
+}
+
+.sinMargin {margin: 0 auto;}
+
+.margenDerecho {
+    position: absolute;
+    margin-top: 0%;
 }
 
 .margintop {margin-top: 2rem;}
 
+.marginB {margin-bottom: 1rem;}
+
+.margenAbajo {margin-bottom: 1.5rem;}
+
 .estiloBotones {
     color: $colorclaro;
     background-color: rgb(26, 68, 37);
-    font-family: 'Quicksand', sans-serif ;
     font-size: large;
     margin: 1rem;
     padding: 0.2rem;
 }
 
-.margenAbajo {margin-bottom: 1.5rem;}
-
 .tituloClaro {color: $colorclaro;}
-
-.marginB {
-    margin-bottom: 1rem;
-}
 
 .subtituloCentrado{ 
     color: rgb(12,71,36);

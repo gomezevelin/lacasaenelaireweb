@@ -57,32 +57,58 @@
 
 .nosotros__img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
-.imgCajaNosotros {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-left: 5%;
+.caja__imgOrigen {
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+    width: 400px;
+    height: 340px;
+    overflow: hidden;
+}
+
+.imgOrigen {
+    width: 100%;
+    height: 100%;
+}
+
+.caja__imgPlanes {
+    width: 410px;
+    height: 350px;
+    margin-top: 2rem;
+    margin-left: -4rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.imgPlanes{
+    width: 100%;
+    height: 100%;
+}
+
+.caja_imgRecomendaciones {
+    width: 490px;
+    height: 320px;
+    margin-top: 2.5rem;
+}
+
+.imgRecomendaciones {
+    width: 100%;
 }
 
 .parrafoCajaNosotros {
     font-family: 'Quicksand', sans-serif;
-    text-align: center;
     font-size: 100%;
     line-height: 2;
-    text-align: center;
+    text-align: center; 
     color: $colorclaro;
     padding-top: 1rem;
-    padding-left: 1rem;
     font-weight: bold;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0rem;
 }
 
-.tamañoLetra {
-    margin-left: 2rem;
-}
+.tamañoLetra {margin-left: 2rem;}
 
 .tarjetaStaff {
     background-color: $coloroscuro21;
@@ -196,6 +222,7 @@ justify-content: center;
     border: solid $coloroscuro21 5px ;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    padding: 0.5rem;
 }
 
 .cerro__img {
@@ -222,33 +249,29 @@ justify-content: center;
 }
 
 .cajaIframe {
-    height: 700px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .cajaVisitaVirtual {
     width: 1000px;
-    height: 800px;
+    height: 600px;
     margin-bottom: 2rem;
 }
 
 .visitaVirtual{
-    margin-left: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 100%;
-    height: 100%;
+    height: 600px;
 }
 
 /* Quinta página - Contacto */
 
 .cajaContacto {
     width: 500px;
-    height: 80%;
     border: $coloroscuro21 solid 3px;
     margin: auto;
     margin-top: 3rem;
@@ -284,3 +307,75 @@ justify-content: center;
     background-color: $coloroscuro21;
     border: 3px $coloroscuro51 solid;
 }
+
+.nosotros__cajaImg { text-align: center; } 
+
+.nosotros__Img { 
+    max-width: 1000px; 
+    max-height: 700px; 
+} 
+
+.acordion__h2{ 
+    background-color:rgba(51, 88, 70, 0.747) ; 
+    font-size: 17px; 
+    color: bisque; 
+    font-weight: bolder; 
+    
+} 
+
+.acordion__p { 
+    font-size: 1rem; 
+    font-weight: lighter; 
+    color: bisque; 
+} 
+
+.accordion-button:not(.collapsed) {
+        background-color: rgba(51, 88, 70, 0.747); 
+        color: bisque; 
+        text-align: center; 
+        border: 2px rgb(12,71,36) solid;}
+
+.acordion__caja { background-color: rgba(21, 65, 49, 0.548); } 
+
+.acordion__encabezado {background-color: rgba(51, 88, 70, 0.747);} 
+
+.accordion-item {border: 0.3px solid rgba(51, 88, 70, 0.747);} 
+
+.card { 
+    background-color:rgba(51, 88, 70, 0.747);
+              
+    &__cajaP { 
+        background-color: rgba(51, 88, 70, 0.747); 
+        text-align: center; 
+    } 
+
+    &__p { 
+        font-family: 'Quicksand', sans-serif; 
+        text-align: center; 
+        color: rgb(26, 68, 37); 
+        font-weight: bold; } 
+
+    &__h3{ 
+        font-family: 'Oooh Baby' ; 
+        color: bisque; 
+        font-size: 2rem; 
+        font-weight: 500; } 
+
+    &__altura { height: 100%; } 
+    
+    &__li { margin-left: -1.5rem;} 
+
+    &__img { 
+        width: 100%; 
+        height: 100%; 
+
+            &--altura {height: 100%; } 
+    } 
+
+    &__cajaImg { 
+        width: 400px; 
+        height: 300px; 
+        padding: 0.2rem; 
+        background-color: bisque; 
+    } 
+} 
