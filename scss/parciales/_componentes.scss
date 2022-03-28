@@ -87,10 +87,10 @@
     height: 100%;
 }
 
-.caja_imgRecomendaciones {
+.caja__imgRecomendaciones {
     width: 490px;
     height: 320px;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
 }
 
 .imgRecomendaciones {
@@ -103,7 +103,9 @@
     line-height: 2;
     text-align: center; 
     color: $colorclaro;
-    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.4rem;
     font-weight: bold;
     margin-bottom: 0rem;
 }
