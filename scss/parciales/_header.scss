@@ -1,6 +1,6 @@
 .header {
     box-shadow: 5px 8px 11px;
-    padding: 1rem;
+    padding:map-get($espaciados,4);
     border-color: $coloroscuro21;
     background-color: rgb(51, 88, 70);
     margin-bottom: 1rem;
@@ -21,8 +21,7 @@
 
 .nav__lista {
     display: flex;
-    gap: 2rem;
-}
+    gap: 2rem;}
 
 .nav__enlace{
     text-decoration: none;
@@ -40,24 +39,19 @@
         background-color: $colorclaro;
         transform: scaleX(0);
         transform-origin: right;
-        transition: transform 0.7s;
-    }
+        transition: transform 0.7s;}
 
     &:hover {
-        color:$colorclaro;
-    }
+        color:$colorclaro;}
 
     &:hover::after {
         transform:scaleX(1);
-        transform-origin: left;
-    }
+        transform-origin: left;}
 }
 
 .icono {
     color: $colorclaro;
-    font-size: 15px;
-}
+    font-size: 15px;}
 
 .oculto {display: none;}
-
 ul {margin-bottom: 0rem;}

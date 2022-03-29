@@ -52,7 +52,7 @@ ul {
   padding-left: 0%; }
 
 .paddingB {
-  padding-bottom: 1rem; }
+  padding: 1rem; }
 
 .sinMargin {
   margin: 0 auto; }
@@ -87,6 +87,11 @@ ul {
   text-decoration: underline;
   font-size: 220%;
   font-family: 'Oooh Baby'; }
+
+strong {
+  text-decoration: underline;
+  font-style: oblique;
+  font-weight: 900; }
 
 .header {
   box-shadow: 5px 8px 11px;
@@ -152,7 +157,6 @@ ul {
 
 .caja2index__p {
   font-weight: bold;
-  font-size: 20px;
   line-height: 1.5;
   text-align: center;
   color: bisque;
@@ -255,9 +259,9 @@ ul {
 /* Tercera página - Actividades */
 .bloqueactividades {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem; }
 
 .cajaNosotros {
@@ -278,8 +282,8 @@ ul {
   grid-area: origen;
   background-color: rgba(21, 65, 49, 0.548);
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .valores {
   grid-area: valores;
@@ -292,20 +296,22 @@ ul {
   grid-area: recomendaciones;
   background-color: rgba(21, 65, 49, 0.548);
   display: flex;
-  align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .tarjeta {
   width: 400px;
   height: 420px;
   margin-top: 1rem;
+  background-color: bisque;
   border: rgba(21, 65, 49, 0.548) solid 5px;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
+  justify-content: center;
+  align-items: stretch;
   flex-direction: column;
-  padding: 0.5rem;
-  align-items: center; }
+  padding: 0.5rem; }
   .tarjeta:hover {
     transform: scale(1.2, 1.2);
     transition: 1s; }
@@ -361,8 +367,9 @@ ul {
 .cajaIframe {
   padding: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column; }
 
 .cajaVisitaVirtual {
   width: 1000px;
@@ -393,8 +400,8 @@ ul {
 
 .formulario {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
   margin: 0.5rem;
   line-height: 1.5; }
 
@@ -418,14 +425,18 @@ ul {
 
 .acordion__h2 {
   background-color: rgba(51, 88, 70, 0.747);
-  font-size: 17px;
+  font-size: 1.3rem;
   color: bisque;
   font-weight: bolder; }
 
 .acordion__p {
-  font-size: 1rem;
-  font-weight: lighter;
+  font-size: 1.1rem;
+  font-weight: 400;
   color: bisque; }
+
+.acordion__strong {
+  font-size: 1.3;
+  font-weight: bold; }
 
 .accordion-button:not(.collapsed) {
   background-color: rgba(51, 88, 70, 0.747);
@@ -434,7 +445,7 @@ ul {
   border: 2px #0c4724 solid; }
 
 .acordion__caja {
-  background-color: rgba(21, 65, 49, 0.548); }
+  background-color: rgba(21, 65, 49, 0.87); }
 
 .acordion__encabezado {
   background-color: rgba(51, 88, 70, 0.747); }
@@ -543,12 +554,12 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .header__contenedor {
-    flex-direction: column; }
-  .header__titulo {
-    text-align: center;
-    line-height: 40px;
-    margin-bottom: 0.5rem; }
+    .header__contenedor {
+      flex-direction: column; }
+    .header__titulo {
+      text-align: center;
+      line-height: 40px;
+      margin-bottom: 0.5rem; }
   .nav__lista {
     margin-top: 1rem; }
   .caja3index {
@@ -563,14 +574,14 @@ ul {
     height: 100%; }
   .footer {
     flex-direction: column-reverse; }
-  .footer__p {
-    font-size: 15px; }
-  .footer__lista {
-    margin-bottom: 1.5rem;
-    margin-top: 1rem; }
-  .footer__contenedor {
-    flex-direction: column;
-    margin-top: 1rem; }
+    .footer__p {
+      font-size: 15px; }
+    .footer__lista {
+      margin-bottom: 1.5rem;
+      margin-top: 1rem; }
+    .footer__contenedor {
+      flex-direction: column;
+      margin-top: 1rem; }
   .tamañoReducidoI {
     font-size: 32px; }
   .tamañoLetra {
@@ -716,7 +727,7 @@ ul {
   .iframeIndexContenedor {
     height: 15rem; }
   .tarjeta__img {
-    padding: 0.3rem; }
+    padding: 0.2rem; }
   .footer {
     margin-left: 0.2rem; }
   .cajaContacto {

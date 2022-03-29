@@ -1,3 +1,13 @@
 $colorclaro: bisque ;
 $coloroscuro51: rgba(51, 88, 70, 0.747);
 $coloroscuro21: rgba(21, 65, 49, 0.548);
+
+$espaciado:1rem;
+$espaciados: (
+    0: 0,
+    1: $espaciado - 0.8,
+    2: $espaciado - 0.7,
+    3: $espaciado - 0.5,
+    4: $espaciado,
+    5: $espaciado + 0.5,);
+
