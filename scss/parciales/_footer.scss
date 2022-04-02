@@ -10,25 +10,19 @@
     &__contenedor { 
         height: 100%;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+        @include cajaflex (space-between, center);}
     
     &__p {
         font-size: 20px;
         color: bisque;
-        margin-bottom: 0%;
-    }
+        margin-bottom: 0%;}
 
     &__lista {
         display: flex; 
         gap: 3rem;
-        padding-left: 0%;
-    }
+        padding-left: 0%;}
 }
 
 .tamañoReducidoI {
     font-size: 2rem;
-    text-align: center;
-}
+    text-align: center;}
