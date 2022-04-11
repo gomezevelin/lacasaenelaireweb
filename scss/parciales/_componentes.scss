@@ -119,7 +119,7 @@
     gap: 0.5rem;}
 
 .tarjeta {
-    width: 400px;
+    width: 350px;
     height: 420px;
     margin-top: 1rem;
     background-color: bisque;
@@ -141,7 +141,7 @@
 
     &__img {
         width: 100%;
-        height: 80%;
+        height: 100%;
         padding: 1rem;
     }
     
@@ -153,30 +153,37 @@
     }
 }
 
-.acordion__h2{ 
-    background-color:rgba(51, 88, 70, 0.747) ; 
-    font-size: 1.3rem; 
-    color: bisque; 
-    font-weight: bolder; } 
+.acordion {
+    padding: map-get($map:$espaciados, $key:5 );
 
-.acordion__p { 
-    font-size: 1.1rem; 
-    font-weight: 400; 
-    color: bisque;
-background-color:black; } 
-
-.acordion__strong {
-    font-size: 1.3;
-    font-weight: bold;}
+        &__caja { background-color: rgba(21, 65, 49, 0.87); } 
+        &__encabezado {background-color: rgba(51, 88, 70, 0.747);}
+        &__h2{ 
+            background-color:rgba(51, 88, 70, 0.747) ; 
+            font-size: 1.3rem; 
+            color: bisque; 
+            font-weight: bolder; } 
+        
+        &__p { 
+            font-size: 1.1rem; 
+            font-weight: 400; 
+            color: bisque;
+            background-color:$coloroscuro21;
+            background: radial-gradient(circle, rgba(12,71,36,1) 0%, rgba(79,91,24,1) 35%, rgba(2,54,32,1) 100%);
+            @include cajaflex (center,center);} 
+        
+        &__strong {
+            font-size: 1.3;
+            font-weight: bold;} 
+}
 
 .accordion-button:not(.collapsed) {
-        background-color: rgba(51, 88, 70, 0.747); 
-        color: bisque; 
-        text-align: center; 
-        border: 2px rgb(12,71,36) solid;}
+        
+    background-color: rgba(51, 88, 70, 0.747); 
+    color: bisque; 
+    text-align: center; 
+    border: 2px rgb(12,71,36) solid;}
 
-.acordion__caja { background-color: rgba(21, 65, 49, 0.87); } 
-.acordion__encabezado {background-color: rgba(51, 88, 70, 0.747);} 
 .accordion-item {border: 0.3px solid rgba(51, 88, 70, 0.747);} 
 .altura {height: 500px;}
 
@@ -234,13 +241,20 @@ background-color:black; }
     margin-bottom: 2rem;
     padding: 1rem;
     background-color: $coloroscuro21;
+    background-image: linear-gradient(rgba(221, 221, 221, 0.7), rgba(117, 116, 116, 0.527)), url(https://scontent.feze11-1.fna.fbcdn.net/v/t1.18169-9/24059215_1523002031117359_3082567584205572247_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=g7RqOBMcny8AX-J3gpr&_nc_ht=scontent.feze11-1.fna&oh=00_AT8ZHsG3vUGDSGVdYTZj2m43NLH8Xymc-2iLkyqqucm_lQ&oe=627B5138);
+    background-size: cover;
     padding-bottom: 1rem;}
 
 .formulario {
     @include cajaflex (center, flex-start);
     margin: 0.5rem;
-    line-height: 1.5;}
+    line-height: 1.5;
+    gap: 0.3rem;}
 
+.check {
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+}
 .mapa {
     width: 100%;
     height: 350px;}
@@ -253,39 +267,3 @@ background-color:black; }
     border: 3px $coloroscuro51 solid;}
 
 .nosotros__cajaImg { text-align: center; } 
-
-.card { background-color:rgba(51, 88, 70, 0.747);
-              
-    &__cajaP { 
-        background-color: rgba(51, 88, 70, 0.747); 
-        text-align: center; } 
-
-    &__p { 
-        font-family: 'Quicksand', sans-serif; 
-        text-align: center; 
-        color: rgb(26, 68, 37); 
-        font-weight: bold; } 
-
-    &__h3{ 
-        font-family: 'Oooh Baby' ; 
-        color: bisque; 
-        font-size: 2rem; 
-        font-weight: 500; } 
-
-    &__altura { height: 100%; } 
-    
-    &__li { margin-left: -1.5rem;} 
-
-    &__img { 
-        width: 100%; 
-        height: 100%; 
-
-            &--altura {height: 100%; } 
-    } 
-
-    &__cajaImg { 
-        width: 400px; 
-        height: 300px; 
-        padding: 0.2rem; 
-        background-color: bisque; } 
-} 

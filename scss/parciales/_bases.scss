@@ -1,19 +1,16 @@
 .container__reset { 
     margin: 0%; 
-    padding: 0%; 
-} 
+    padding: 0%;} 
 
 .row__reset { 
     margin-left: 0%; 
     margin-right: 0%; 
-    padding: 0%; 
-} 
+    padding: 0%;} 
 
 * { 
     margin: 0%; 
     padding: 0%;
-    box-sizing: border-box;
- }
+    box-sizing: border-box;}
 
 .body {
     background-color:$colorclaro;
@@ -57,8 +54,7 @@ justify-content: center;}
 
 .margenDerecho {
     position: absolute;
-    margin-top: 0%;
-}
+    margin-top: 0%;}
 
 .margintop {margin-top: 2rem;}
 
@@ -98,3 +94,9 @@ strong {
 .sinNegrita {
     text-decoration: none;
     font-size: 200%;}
+
+.minTamaño {
+    min-height: 200px;
+    min-width: 350px;}
+.oscuro {color: #0c4724 !important;}
+.resaltado {background-color: bisque;}
